@@ -19,7 +19,7 @@ const SendMessage = ({ scroll }) => {
       createdAt: serverTimestamp(),
       uid,
     });
-    setMessage(""); // Clear the message input after sending
+    setMessage("");
     scroll.current.scrollIntoView({ behavior: "smooth" });
   };
 

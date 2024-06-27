@@ -21,8 +21,8 @@ input {
 .App {
   width: 100%;
   min-height: 100vh;
-  background-color: #1c2c4c;
-  color: #abb2b6;
+  background-color: #d2d5db;
+  color: "#fff";
   padding-top: 60px;
 }
 
@@ -32,7 +32,7 @@ input {
   align-items: center;
   justify-content: space-between;
   background-color: #5f1ac0;
-  color: #242443;
+  color: #fff;
   height: 60px;
   position: fixed;
   left: 0;
@@ -51,7 +51,7 @@ input {
 .sign-out {
   padding: 5px 10px;
   border-radius: 5px;
-  color: #261aaa;
+  color: #fff;
   border: 1px solid #1c2c4c;
   background-color: #1c2c4c;
   font-weight: 600;
@@ -61,13 +61,12 @@ input {
   padding: 30px;
   text-align: center;
   margin-top: 40px;
-  color: #747196;
+  color: #181616;
 }
 .welcome :is(h2, p, img) {
   margin-bottom: 20px;
 }
 
-/* chat component */
 .messages-wrapper {
   padding: 30px;
   margin-bottom: 60px;
@@ -142,7 +141,7 @@ input {
   padding: 5px 10px;
   border-radius: 0 5px 5px 0;
   color: 'white';
-  border: 1px solid #cac7d6;
-  background-color: #3f2ebc;
+  border: 1px solid #553ac4;
+  background-color: #ececec;
   font-weight: 600;
 }
