@@ -31,10 +31,12 @@ const SendMessage = ({ scroll }) => {
         type="text"
         className="form-input__input"
         placeholder="type message..."
-        value={message} // Link the input value to the state
-        onChange={(e) => setMessage(e.target.value)} // Update state on input change
+        value={message}
+        onChange={(e) => setMessage(e.target.value)}
       />
-      <button type="submit">Send</button>
+      <button className="bg-blue-600" type="submit">
+        Send
+      </button>
     </form>
   );
 };

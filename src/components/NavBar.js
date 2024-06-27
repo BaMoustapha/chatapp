@@ -11,11 +11,9 @@ const NavBar = () => {
     const provider = new GoogleAuthProvider();
     signInWithPopup(auth, provider)
       .then((result) => {
-        // Handle the signed-in user info
         console.log(result.user);
       })
       .catch((error) => {
-        // Handle Errors here.
         console.error(error);
       });
   };
