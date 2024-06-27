@@ -17,7 +17,7 @@ function App() {
       {!user ? <Welcome /> : <ChatBox />}
       <Router>
         <Routes>
-          <Route path="/" element={<ChatBox />} />
+          <Route path="/" element={<Welcome />} />
           <Route path="/Welcome" element={<Welcome />}></Route>
           <Route path="/Chat" element={<ChatBox />}></Route>
           <Route path="/NavBar " element={<NavBar />}></Route>
