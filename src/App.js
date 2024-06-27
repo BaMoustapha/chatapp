@@ -1,25 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import { useAuthState } from "react-firebase-hooks/auth";
+import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
+import "./App.css";
+import ChatBox from "./components/Chat";
+import NavBar from "./components/NavBar";
+import SendMessage from "./components/SendMessage";
+import Message from "./components/Message";
+import Welcome from "./components/Welcome";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <NavBar />
+      <Router>
+        <Routes>
+          <Route path="/" element={<Welcome />} />
+          <Route path="/Welcome" element={<Welcome />}></Route>
+          <Route path="/Chat" element={<ChatBox />}></Route>
+          <Route path="/NavBar " element={<NavBar />}></Route>
+          <Route path="/SendMessage" element={<SendMessage />}></Route>
+          <Route path="/Chat" element={<ChatBox />}></Route>
+        </Routes>
+      </Router>
     </div>
   );
 }
-
 export default App;
