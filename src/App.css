@@ -26,7 +26,6 @@ input {
   padding-top: 60px;
 }
 
-/* navbar */
 .nav-bar {
   padding: 10px 30px;
   display: flex;
@@ -58,12 +57,11 @@ input {
   font-weight: 600;
 }
 
-/* welcome page */
 .welcome {
   padding: 30px;
   text-align: center;
   margin-top: 40px;
-  color: #4939c0;
+  color: #747196;
 }
 .welcome :is(h2, p, img) {
   margin-bottom: 20px;
@@ -118,17 +116,17 @@ input {
   bottom: 0px;
   width: 100%;
   padding: 20px 30px;
-  background-color: #3e17c8;
+  background-color: #918e9f;
   display: flex;
 }
 .send-message > input {
-  height: 40px;
+  height: 70px;
   padding: 10px 10px;
   border-radius: 5px 0 0 5px;
   border: none;
   flex-grow: 1;
   background-color: white;
-  color: #b4bbca;
+  color: #1d1e20;
   font-size: 1rem;
 }
 .send-message > input:placeholder {
@@ -144,7 +142,7 @@ input {
   padding: 5px 10px;
   border-radius: 0 5px 5px 0;
   color: 'white';
-  border: 1px solid #3c1fad;
+  border: 1px solid #cac7d6;
   background-color: #3f2ebc;
   font-weight: 600;
 }
