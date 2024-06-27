@@ -26,7 +26,7 @@ const NavBar = () => {
 
   return (
     <nav className="text-white bg-blue-800 nav-bar">
-      <h1>React Chat</h1>
+      <h1>Chat APP</h1>
       {loading ? (
         <div>Loading...</div>
       ) : user ? (

@@ -22,7 +22,7 @@ input {
   width: 100%;
   min-height: 100vh;
   background-color: #1c2c4c;
-  color: #4c768d;
+  color: #abb2b6;
   padding-top: 60px;
 }
 
@@ -32,7 +32,7 @@ input {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #4c768d;
+  background-color: #5f1ac0;
   color: #242443;
   height: 60px;
   position: fixed;
@@ -52,7 +52,7 @@ input {
 .sign-out {
   padding: 5px 10px;
   border-radius: 5px;
-  color: #88dded;
+  color: #261aaa;
   border: 1px solid #1c2c4c;
   background-color: #1c2c4c;
   font-weight: 600;
@@ -63,7 +63,7 @@ input {
   padding: 30px;
   text-align: center;
   margin-top: 40px;
-  color: #7cc5d9;
+  color: #4939c0;
 }
 .welcome :is(h2, p, img) {
   margin-bottom: 20px;
@@ -77,20 +77,20 @@ input {
 .chat-bubble {
   border-radius: 20px 20px 20px 0;
   padding: 15px;
-  background-color: #7cc5d9;
+  background-color: #4642af;
   color: #1c2c4c;
   width: max-content;
   max-width: calc(100% - 50px);
-  box-shadow: -2px 2px 1px 1px #4c768d;
+  box-shadow: -2px 2px 1px 1px #4733c9;
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   margin-bottom: 20px;
 }
 .chat-bubble.right {
   margin-left: auto;
   border-radius: 20px 20px 0 20px;
   background-color: #fff;
-  box-shadow: -2px 2px 1px 1px #88dded;
+  box-shadow: -2px 2px 1px 1px #3931cc;
 }
 .chat-bubble__left {
   width: 35px;
@@ -118,7 +118,7 @@ input {
   bottom: 0px;
   width: 100%;
   padding: 20px 30px;
-  background-color: #4c768d;
+  background-color: #3e17c8;
   display: flex;
 }
 .send-message > input {
@@ -128,7 +128,7 @@ input {
   border: none;
   flex-grow: 1;
   background-color: white;
-  color: #1c2c4c;
+  color: #b4bbca;
   font-size: 1rem;
 }
 .send-message > input:placeholder {
@@ -143,8 +143,8 @@ input {
   height: 40px;
   padding: 5px 10px;
   border-radius: 0 5px 5px 0;
-  color: #242443;
-  border: 1px solid #7cc5d9;
-  background-color: #7cc5d9;
+  color: 'white';
+  border: 1px solid #3c1fad;
+  background-color: #3f2ebc;
   font-weight: 600;
 }
