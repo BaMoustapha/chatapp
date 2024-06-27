@@ -6,11 +6,14 @@ import NavBar from "./components/NavBar";
 import SendMessage from "./components/SendMessage";
 import Message from "./components/Message";
 import Welcome from "./components/Welcome";
+import { auth } from "./firebase";
 
 function App() {
+  const [user] = useAuthState(auth);
   return (
     <div className="App">
       <NavBar />
+      {!user ? <Welcome /> : <ChatBox />}
       <Router>
         <Routes>
           <Route path="/" element={<Welcome />} />
@@ -18,7 +21,7 @@ function App() {
           <Route path="/Chat" element={<ChatBox />}></Route>
           <Route path="/NavBar " element={<NavBar />}></Route>
           <Route path="/SendMessage" element={<SendMessage />}></Route>
-          <Route path="/Chat" element={<ChatBox />}></Route>
+          <Route path="/Message" element={<Message />}></Route>
         </Routes>
       </Router>
     </div>
