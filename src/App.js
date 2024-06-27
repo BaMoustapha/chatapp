@@ -7,6 +7,7 @@ import SendMessage from "./components/SendMessage";
 import Message from "./components/Message";
 import Welcome from "./components/Welcome";
 import { auth } from "./firebase";
+import "./App.css";
 
 function App() {
   const [user] = useAuthState(auth);

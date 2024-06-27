@@ -25,7 +25,7 @@ const NavBar = () => {
   console.log("User:", user);
 
   return (
-    <nav className="nav-bar">
+    <nav className="text-white bg-blue-800 nav-bar">
       <h1>React Chat</h1>
       {loading ? (
         <div>Loading...</div>
@@ -34,12 +34,15 @@ const NavBar = () => {
           Sign Out
         </button>
       ) : (
-        <button className="sign-in">
+        <button className="text-center sign-in">
           <img
             onClick={googleSignIn}
             src={GoogleSignin}
             alt="sign in with google"
             type="button"
+            sizes="20"
+            width={20}
+            height={20}
           />
         </button>
       )}

@@ -5,7 +5,7 @@ const Message = ({ message }) => {
   const [user] = useAuthState(auth);
 
   return (
-    <div className="flex flex-col justify-center bg-white">
+    <div className="flex flex-col justify-center h-20 max-w-sm overflow-hidden bg-white rounded shadow-lg">
       <div className={`chat-bubble ${message.uid === user.uid ? "right" : ""}`}>
         <img
           className="chat-bubble__left"

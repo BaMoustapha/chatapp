@@ -20,6 +20,9 @@ const Welcome = () => {
           src={GoogleSignin}
           alt="sign in with google"
           type="button"
+          sizes="30"
+          width={30}
+          height={30}
         />
       </button>
     </main>
