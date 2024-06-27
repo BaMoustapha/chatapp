@@ -19,7 +19,7 @@ const SendMessage = ({ scroll }) => {
       createdAt: serverTimestamp(),
       uid,
     });
-    setMessage("");
+    setMessage(""); // Clear the message input after sending
     scroll.current.scrollIntoView({ behavior: "smooth" });
   };
 
@@ -31,6 +31,8 @@ const SendMessage = ({ scroll }) => {
         type="text"
         className="form-input__input"
         placeholder="type message..."
+        value={message} // Link the input value to the state
+        onChange={(e) => setMessage(e.target.value)} // Update state on input change
       />
       <button type="submit">Send</button>
     </form>
